@@ -96,7 +96,7 @@ class _AddItemState extends State<AddItem> {
 
                     //Create a reference for the image to be stored
                     Reference referenceImageToUpload =
-                        referenceDirImages.child('name');
+                        referenceDirImages.child('name2');
 
                     //Handle errors/success
                     try {
