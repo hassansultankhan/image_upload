@@ -13,6 +13,7 @@ class AddItem extends StatefulWidget {
 }
 
 class _AddItemState extends State<AddItem> {
+ 
   TextEditingController _controllerName = TextEditingController();
   TextEditingController _controllerQuantity = TextEditingController();
 
@@ -96,7 +97,7 @@ class _AddItemState extends State<AddItem> {
 
                     //Create a reference for the image to be stored
                     Reference referenceImageToUpload =
-                        referenceDirImages.child('name2');
+                        referenceDirImages.child('${_controllerName.text}');
 
                     //Handle errors/success
                     try {
